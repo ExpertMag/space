@@ -1,0 +1,28 @@
+.ship-characteristics {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0 10%;
+	grid-auto-flow: row;
+	justify-content: start;
+	align-content: center;
+	justify-items: start;
+	align-items: center;
+	grid-template-areas:
+		'. .'
+		'. .'
+		'missions missions';
+}
+
+.missions {
+	grid-area: missions;
+}
+
+.arrow {
+	margin-right: 23px;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+}

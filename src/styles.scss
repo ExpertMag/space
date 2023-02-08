@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+button {
+	cursor: pointer;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-family: Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+		'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+		'Noto Color Emoji';
+}
+
+h1 {
+	font-weight: 500;
+	font-style: normal;
+	font-size: 28px;
+	line-height: 32px;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+h2 {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 23px;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+p,
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.arrow {
+	color: #2962ff;
+	font-size: x-large;
+}
+
+.button {
+	background: none;
+	border: none;
+	color: #2962ff;
+	font-size: 14px;
+	line-height: 16px;
+
+	&[disabled] {
+		color: #3c474c;
+		cursor: default;
+	}
+}

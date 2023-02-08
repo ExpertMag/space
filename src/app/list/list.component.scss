@@ -1,0 +1,57 @@
+.container {
+	display: flex;
+	justify-content: space-between;
+	background-color: #e5e5e5;
+}
+
+.list-container {
+	margin: 52px 63px 0 63px;
+	width: 100%;
+
+	ul {
+		list-style-type: none;
+	}
+
+	.list {
+		margin-top: 24px;
+		margin-bottom: 52px;
+	}
+
+	.list-item {
+		padding: 40px 0 29px;
+		border-bottom: 1px solid #a5a5a5;
+	}
+
+	.ship-characteristics {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		gap: 0px 10%;
+		grid-auto-flow: column;
+		justify-content: start;
+		align-content: center;
+		justify-items: start;
+		align-items: center;
+		grid-template-areas: '. .';
+	}
+
+	.ship-name {
+		display: flex;
+		align-items: center;
+	}
+
+	.arrow {
+		margin-left: 23px;
+	}
+}
+
+.filter-container {
+	width: 400px;
+	background-color: white;
+	padding: 52px 32px;
+	border-right: 1px solid #a5a5a5;
+	h2 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+}

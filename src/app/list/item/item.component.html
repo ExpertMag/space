@@ -1,0 +1,30 @@
+<button (click)="goBack()" class="button">
+  <span class="arrow">&#8592;</span>Вернуться
+</button>
+
+<ng-container *ngIf="ship | async as ship">
+  <h1>{{ ship?.name }}</h1>
+
+  <div class="ship-characteristics">
+    <app-characteristic key="Тип" [value]="ship?.type"></app-characteristic>
+    <app-characteristic
+      key="Порт"
+      [value]="ship?.home_port"
+    ></app-characteristic>
+    <app-characteristic
+      key="Вес"
+      [value]="!ship?.weight_kg ? '' : ship?.weight_kg + ' кг'"
+    ></app-characteristic>
+    <app-characteristic
+      key="Год постройки"
+      [value]="!ship?.year_built ? '' : '' + ship?.year_built"
+    ></app-characteristic>
+
+    <app-characteristic
+      class="missions"
+      key="Миссии"
+      [value]="ship?.missions | concatMissions"
+      direction="column"
+    ></app-characteristic>
+  </div>
+</ng-container>
